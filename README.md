@@ -1,6 +1,6 @@
 # Image_captioner
 
-[![Google Colab](https://shields.io)](https://github.com/bahulmishra/Image_captioner/blob/main/IMAGE_CAPTIONER.ipynb)
+[![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/bahulmishra/Image_captioner/blob/main/IMAGE_CAPTIONER.ipynb)
 
 
 ## 1. Project Scope and Purpose

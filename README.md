@@ -85,3 +85,16 @@ The Toolkit:
 * The Original Captions: The 5 actual human reference texts, so you can immediately compare how closely the machine's thought process matches human perception.
 
 Enjoy exploring the model! Watching a neural network successfully string together its first coherent sentence about a picture is one of the most rewarding experiences in deep learning.
+
+Sample Outputs:
+<img width="1363" height="453" alt="Screenshot 2026-06-12 133759" src="https://github.com/user-attachments/assets/4d62bf8c-8be8-4e77-a501-8b2bc38b2aff" />
+<img width="1195" height="422" alt="Screenshot 2026-06-12 133357" src="https://github.com/user-attachments/assets/4e07e0bf-e7fb-4dd6-8c8d-02383e34da1e" />
+<img width="912" height="372" alt="Screenshot 2026-06-12 131312" src="https://github.com/user-attachments/assets/0f6324a7-3fde-4eb8-906f-adeb7494a76d" />
+<img width="1566" height="397" alt="Screenshot 2026-06-12 133714" src="https://github.com/user-attachments/assets/a8b14574-04b0-4440-a94d-c309cacb9933" />
+
+
+
+
+
+
+

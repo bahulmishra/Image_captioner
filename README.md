@@ -75,6 +75,7 @@ The Toolkit:
 
 6. Visualization: We render the results in a clean dashboard.
 
+<img width="1505" height="6098" alt="image_captioner_architercture" src="https://github.com/user-attachments/assets/0105c637-afc4-448a-82a3-44423d8e8bd5" />
 
 
 

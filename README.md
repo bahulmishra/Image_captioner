@@ -50,6 +50,9 @@ This model is a classic "Encoder-Decoder" setup. It uses two separate "brains" t
 * Validation Metric: BLEU Score (Bilingual Evaluation Understudy).
    Why? BLEU specifically measures how closely the machine-generated text matches the human-written reference texts, rewarding correct n-grams (phrases). (Alternative: METEOR or CIDEr)
 
+  <img width="2473" height="1254" alt="trainVsvalloss" src="https://github.com/user-attachments/assets/f8b7cc85-4e5c-4c7a-99ce-8206669352e6" />
+
+
   ## Important Libraries & Step-by-Step Workflow
 The Toolkit:
 

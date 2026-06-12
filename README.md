@@ -76,51 +76,6 @@ The Toolkit:
 6. Visualization: We render the results in a clean dashboard.
 
 
-graph TD
-    %% Define Colors and Styles for a clean UI look
-    classDef input fill:#f8f9fa,stroke:#ced4da,stroke-width:2px,color:#212529,rx:8px,ry:8px;
-    classDef vision fill:#e3f2fd,stroke:#2196f3,stroke-width:2px,color:#0d47a1,rx:8px,ry:8px;
-    classDef language fill:#e8f5e9,stroke:#4caf50,stroke-width:2px,color:#1b5e20,rx:8px,ry:8px;
-    classDef merge fill:#fff3e0,stroke:#ff9800,stroke-width:2px,color:#e65100,rx:8px,ry:8px;
-    classDef output fill:#fce4ec,stroke:#e91e63,stroke-width:2px,color:#880e4f,rx:8px,ry:8px;
-
-    subgraph Vision_Pipeline ["👁️ Vision Branch (InceptionV3 Features)"]
-        direction TB
-        V1["Features Input<br>(Shape: 2048)"]:::input
-        V2["Batch Normalization"]:::vision
-        V3["Dense Layer<br>(128 Units, ReLU)"]:::vision
-        V4["Batch Normalization"]:::vision
-        
-        V1 --> V2 --> V3 --> V4
-    end
-
-    subgraph Language_Pipeline ["📝 Language Branch (Caption Memory)"]
-        direction TB
-        L1["Sequence Input<br>(Shape: 34 tokens)"]:::input
-        L2["Embedding Layer<br>(Vocab: 3319, Dim: 128, Masked)"]:::language
-        L3["Dropout<br>(Rate: 0.3)"]:::language
-        L4["LSTM Layer<br>(128 Units)"]:::language
-        L5["Dropout<br>(Rate: 0.3)"]:::language
-        
-        L1 --> L2 --> L3 --> L4 --> L5
-    end
-
-    subgraph Decoder ["🧠 Decoder (Merger & Prediction)"]
-        direction TB
-        D1{"Add Layer<br>(Combines Features)"}:::merge
-        D2["Dense Layer<br>(128 Units, ReLU)"]:::merge
-        D3["Output Dense Layer<br>(3319 Units, Softmax)"]:::output
-        D4(("Predicted<br>Next Word")):::output
-        
-        D1 --> D2 --> D3 --> D4
-    end
-
-    %% Routing connections between subgraphs
-    V4 -->|128-dim Vector| D1
-    L5 -->|128-dim Vector| D1
-    
-    %% Loop back arrow for the recursive generation process
-    D4 -.->|Appended to text sequence<br>for next prediction step| L1
 
 
    ## 5. The Outputs: What You Will See
